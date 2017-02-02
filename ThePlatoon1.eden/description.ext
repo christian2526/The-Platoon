@@ -1,0 +1,48 @@
+class cfgNotifications
+{
+  class TaskAssigned
+	{
+		title = "$STR_A3_CfgNotifications_TaskAssigned_0";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		priority = 5;
+		sound = "taskAssigned";
+	};
+	class TaskCreated: TaskAssigned
+	{
+		title = "$STR_A3_CfgNotifications_TaskCreated_0";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconCreated_ca.paa";
+		priority = 5;
+		sound = "taskCreated";
+	};
+	class TaskSucceeded: TaskAssigned
+	{
+		title = "$STR_A3_CfgNotifications_TaskSucceeded_0";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconDone_ca.paa";
+		priority = 6;
+		color[] = {0.7,1.0,0.3,1.0};
+		sound = "taskSucceeded";
+	};
+	class TaskFailed: TaskAssigned
+	{
+		title = "$STR_A3_CfgNotifications_TaskFailed_0";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconFailed_ca.paa";
+		priority = 6;
+		color[] = {1.0,0.3,0.2,1.0};
+		sound = "taskFailed";
+	};
+	class TaskCanceled: TaskAssigned
+	{
+		title = "$STR_A3_CfgNotifications_TaskCanceled_0";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIconCanceled_ca.paa";
+		priority = 6;
+		color[] = {0.7,0.7,0.7,1.0};
+		sound = "taskCanceled";
+	};
+	class TaskUpdated: TaskAssigned
+	{
+		title = "$STR_A3_CfgNotifications_TaskUpdated_0";
+		priority = 4;
+		sound = "taskUpdated";
+	};
+};
